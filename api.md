@@ -21,7 +21,9 @@ client
   适用于需要通过客户端访问的方式，例如需要通过浏览器的javascript代码，或者电脑/移动终端上的客户端访问时。
   请求方法： 
   https://xmax.io/oauth/authorize
+  
   请求参数
+  
   参数	                   必选	                      字段说明
   response_type	            是	                     授权类型，此值固定为“token”。
   app_id	                  是	                     分配给授权方的的app_id
