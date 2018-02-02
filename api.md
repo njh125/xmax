@@ -1,11 +1,17 @@
 
 一．账户接入步骤
 步骤1：申请接入，获取app_id和app_secret，等待审核；
+
 步骤2：开发应用/网站；
+
 步骤3：根据实际情况选择client或者server。
+
 步骤4：通过用户登录验证和授权，获取Access Token；
+
 步骤5：通过Access Token获取用户的校验信息；
+
 步骤6：调用OpenApi相关接口，来请求访问或修改用户授权的资源。
+
 调用方式
 client
 client是OAuth2.0认证的一种模式；
