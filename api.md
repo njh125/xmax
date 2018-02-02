@@ -22,14 +22,16 @@ client
   请求方法： 
   https://xmax.io/oauth/authorize
   请求参数
-  参数	必选	字段说明
-  response_type	是	授权类型，此值固定为“token”。
-  app_id	是	分配给授权方的的app_id
-  redirect_uri	是	成功授权后的回调地址，必须是注册client_id时填写的主域名下的地址
-  scope	是	请求用户授权时向用户显示的可进行授权的列表
-  state	是	client端的状态值。用于第三方应用防止CSRF攻击，成功授权后回调时会原样带回。
+  参数	                   必选	                      字段说明
+  response_type	            是	                     授权类型，此值固定为“token”。
+  app_id	                  是	                     分配给授权方的的app_id
+  redirect_uri	            是	                     成功授权后的回调地址，必须是注册client_id时填写的主域名下的地址
+  scope	                    是                      请求用户授权时向用户显示的可进行授权的列表
+  state	                    是	                     client端的状态值。用于第三方应用防止CSRF攻击，成功授权后回调时会原样带回。
+  
   返回说明 
-  1. 如果用户成功登录并授权，则会跳转到指定的回调地址，并在URL后加“#”号，带上Access Token以及expires_in,app_id等参数。如果请求参数中传入了state，    这里会带上原始的state值。如果redirect_uri地址后已经有“#”号，则加“&”号，带上相应的返回参数。 
+  
+  如果用户成功登录并授权，则会跳转到指定的回调地址，并在URL后加“#”号，带上Access Token以及expires_in,app_id等参数。如果请求参数中传入了state，    这里会带上原始的state值。如果redirect_uri地址后已经有“#”号，则加“&”号，带上相应的返回参数。 
   如：#app_id=xxx123445&access_token=********&expires_in=360000&state=callbackstate
   
 server
